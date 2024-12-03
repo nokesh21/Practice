@@ -29,23 +29,23 @@ public class Listener extends Basetest implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		String path=null;
-		
-		test.fail(result.getThrowable());
-		try {
-			 driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-			 
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			path=getScreenshot(result.getMethod().getMethodName(),driver);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		test.addScreenCaptureFromPath(path,result.getMethod().getMethodName());
+//		String path=null;
+//		
+//		test.fail(result.getThrowable());
+//		try {
+//			 driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+//			 
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		try {
+//			path=getScreenshot(result.getMethod().getMethodName(),driver);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		test.addScreenCaptureFromPath(path,result.getMethod().getMethodName());
 	
 }
 	@Override
