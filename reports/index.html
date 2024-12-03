@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web automation reports</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 28, 2024 06:06:31 pm</span></a>
+<a href="#"><span class="badge badge-primary">Dec 3, 2024 10:10:46 pm</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">placeorder</p>
             <p class="text-sm">
-              <span>6:06:32 pm</span> / <span>00:00:00:054</span>
+              <span>10:10:47 pm</span> / <span>00:00:19:253</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">placeorder</h5>
-<span class='badge badge-success'>11.28.2024 6:06:32 pm</span>
-<span class='badge badge-danger'>11.28.2024 6:06:32 pm</span>
-<span class='badge badge-default'>00:00:00:054</span>
+<span class='badge badge-success'>12.03.2024 10:10:47 pm</span>
+<span class='badge badge-danger'>12.03.2024 10:11:06 pm</span>
+<span class='badge badge-default'>00:00:19:253</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -110,12 +110,19 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:06:32 pm</td>
+        <td>10:11:06 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-	at standlone.Loginpage.goTo(Loginpage.java:27)
-	at standlone.Basetest.launchapplication(Basetest.java:39)
-	at standlone.Standalone.placeorder(Standalone.java:29)
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[EdgeDriver: MicrosoftEdge on windows (7eab536a122f74d21a6baa2129dea02e)] -> xpath: //*[contains(@class,'hero-primary')]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.70, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64024}, msedge: {msedgedriverVersion: 131.0.2903.70 (73cf19ceae66..., userDataDir: C:\Users\ravit\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64024/devtoo..., se:cdpVersion: 131.0.2903.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7eab536a122f74d21a6baa2129dea02e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at standlone.Reusable.waitforelementinvisibile(Reusable.java:28)
+	at standlone.Confirmationpage.verfyconfirm(Confirmationpage.java:22)
+	at standlone.Standalone.placeorder(Standalone.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,7 +151,7 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:06:32 pm</td>
+        <td>10:11:06 pm</td>
         <td>
           <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
 	at standlone.Basetest.getScreenshot(Basetest.java:45)
@@ -190,7 +197,7 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -218,7 +225,40 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:06:32 pm</td>
+<td>22:10:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>placeorder</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:10:47 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>placeorder</a>
 </td>
@@ -240,13 +280,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 28, 2024 06:06:31 pm</h3>
+<h3>Dec 3, 2024 10:10:46 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 28, 2024 06:06:32 pm</h3>
+<h3>Dec 3, 2024 10:11:06 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -316,7 +356,7 @@
 </div></div>
 <script>
 var timeline = {
-"placeorder":0.054
+"placeorder":19.253
 };
 </script>
 <div class="row">
