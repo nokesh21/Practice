@@ -23,28 +23,28 @@ public class Basetest {
 		String browsername=System.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser");
 		System.out.println(browsername);
 		if(browsername.equalsIgnoreCase("edge")) {
-//		System.setProperty("WebDriver.edge.driver", "C:\\Users\\ravit\\Downloads\\edgedriver_win64");
-			WebDriverManager.edgedriver.setup();
+	System.setProperty("WebDriver.edge.driver", "C:\\Users\\ravit\\Downloads\\edgedriver_win64");
+//			WebDriverManager.edgedriver.setup();
 		 driver=new EdgeDriver();
 		 
 		driver.manage().window().maximize();
 		}
 		else if(browsername.equalsIgnoreCase("chrome"))
 		{
-			WebDriverManager.chromedriver.setup();
-//			System.setProperty("WebDriver.chrome.driver","C:\\Users\\ravit\\Downloads\\chromedriver-win64\\chromedriver-win64");
+//			WebDriverManager.chromedriver.setup();
+		System.setProperty("WebDriver.chrome.driver","C:\\Users\\ravit\\Downloads\\chromedriver-win64\\chromedriver-win64");
 			 driver=new ChromeDriver();
 			driver.manage().window().maximize();
 		}
 		else if(browsername.equalsIgnoreCase("firefox"))
 		{
-			WebDriverManager.chromedriver.setup();
-//			System.setProperty("WebDriver.chrome.driver","C:\\Users\\ravit\\Downloads\\chromedriver-win64\\chromedriver-win64");
+//			WebDriverManager.chromedriver.setup();
+			System.setProperty("WebDriver.chrome.driver","C:\\Users\\ravit\\Downloads\\chromedriver-win64\\chromedriver-win64");
 			 driver=new FirefoxDriver();
 			driver.manage().window().maximize();
 		}
 	}
-	@BeforeTest
+	
 	public Loginpage launchapplication() throws IOException
 	{
 		initializedriver();
