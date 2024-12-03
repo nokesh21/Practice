@@ -38,8 +38,7 @@ public class Standalone extends Basetest{
 
 		productCatalogue.addtocart("ADIDAS ORIGINAL");
 		Cartpage cartpage=productCatalogue.addedchk();
-		System.out.println("nokesh");
-		System.out.println("nokesh");
+		
 		cartpage.gotTocart();
 		Checkoutpage checkoutpage=cartpage.placeorder();
 		Confirmationpage confirmationpage=checkoutpage.selectCountry(); 
