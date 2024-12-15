@@ -13,9 +13,5 @@ public class Testngtutorial {
 	{
 		System.out.println("case");
 	}
-	public void z()
-	{
-		System.out.println("case");
-	}
 
 }
