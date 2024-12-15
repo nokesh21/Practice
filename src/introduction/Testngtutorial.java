@@ -9,5 +9,9 @@ public class Testngtutorial {
 	{
 		System.out.println("case");
 	}
+	public void d()
+	{
+		System.out.println("case");
+	}
 
 }
